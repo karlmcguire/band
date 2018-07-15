@@ -2,34 +2,75 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #000;
+    background-color: #15151f;
     color: #fff;
     font-size: 16px;
 }
 
 .moda {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
     background-image: url("img/1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+    .moda__arro {
+        position: absolute;
+        bottom: 5rem; 
+        padding: 0.5rem;
+        cursor: pointer;
+        opacity: 0.5; 
+
+        -o-transition: .25s;
+        -ms-transition: .25s;
+        -moz-transition: .25s;
+        -webkit-transition: .25s;
+        transition: .25s;
+    }
+        .moda__arro:hover {
+            opacity: 1;
+        }
+        .moda__arro img {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+
+.wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
 
 .head {
-    height: 7rem; 
-    line-height: 7rem;
     padding: 0 4rem; 
     font-weight: bold;
     text-transform: uppercase;
     display: flex;
     justify-content: flex-start;
     position: relative;
+
+    -o-transition: .25s;
+    -ms-transition: .25s;
+    -moz-transition: .25s;
+    -webkit-transition: .25s;
+    transition: .25s;
 }
+    .head--top {
+        height: 9rem;
+        line-height: 9rem;
+        background-color: transparent;
+    }
+    .head--down {
+        height: 6rem;
+        line-height: 6rem;
+        background-color: #15151f;
+    }
     .head div {
         flex: 0 1 auto;
     }
@@ -42,12 +83,53 @@ body {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        cursor: default;
     }
         .head__menu a {
             color: #fff;
             text-decoration: none;
             padding: 0 0.5rem;
         }
+            .head__menu a:hover {
+                border-bottom: 2px solid #d61212;
+            }
     .head__soci{
         margin-left: auto;
+    }
+
+.section { 
+    text-align: center;
+    max-width: 33%;
+}
+    .section div {
+        text-transform: uppercase;
+        margin-bottom: 3rem; 
+    }
+    .section__label {
+        font-weight: bold;
+        font-size: 1rem;
+        opacity: 0.5;
+    }
+    .section__head {
+        font-size: 3.25rem;
+    }
+    .section__body {}
+
+.button {
+    font-size: 0.75rem;
+    border: 2px solid #fff;
+    padding: 0.75rem 1.75rem;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+    .button:hover {
+        background-color: #fff;
+        color: #000;
     }

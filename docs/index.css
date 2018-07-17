@@ -7,6 +7,13 @@ body {
     font-size: 16px;
 }
 
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+}
+
 .moda {
     height: 100%; 
     display: flex;
@@ -99,21 +106,26 @@ body {
 
 .section { 
     text-align: center;
-    max-width: 33%;
+    max-width: 35%;
 }
     .section div {
-        text-transform: uppercase;
         margin-bottom: 3rem; 
     }
     .section__label {
+        text-transform: uppercase;
         font-weight: bold;
         font-size: 1rem;
         opacity: 0.5;
     }
     .section__head {
+        text-transform: uppercase;
         font-size: 3.25rem;
     }
-    .section__body {}
+    .section__body {
+        font-family: "Roboto", sans-serif; 
+        line-height: 1.5;
+        opacity: 0.75;
+    }
 
 .button {
     font-size: 0.75rem;
